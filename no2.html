@@ -55,7 +55,8 @@
             margin-top: 20px;
         }
 
-        button {
+        /* Styled link button */
+        .back-button {
             background-color: pink;
             color: black;
             border: none;
@@ -65,20 +66,13 @@
             cursor: pointer;
             transition: 0.3s;
             font-weight: bold;
-        }
-
-        button:hover {
-            background-color: #ff69b4;
-        }
-
-        /* Makes the button text clickable */
-        button a {
             text-decoration: none;
-            color: inherit;
-            display: block;
-            width: 100%;
-            height: 100%;
-            padding: 14px 24px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #ff69b4;
         }
 
         /* Responsive design for smaller screens */
@@ -91,7 +85,7 @@
                 padding: 20px;
             }
 
-            button {
+            .back-button {
                 font-size: 16px;
                 padding: 12px 20px;
             }
@@ -108,7 +102,7 @@
         </div>
 
         <div class="button-container">
-            <button><a href="index.html">Back</a></button>
+            <a href="index.html" class="back-button">Back</a>
         </div>
     </div>
 
